@@ -4,13 +4,19 @@
   padding: 0;
 }
 
+body {
+  background: hsla(200, 75%, 75%, 1);
+}
+
 .App {
+  padding: 2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  gap: 2vw;
 }
 
 .App div {
   display: flex;
+  /* flex-direction: row; */
 }
