@@ -10,6 +10,7 @@ const TodoList = ({ todos }) => {
 
   return (
     <div className={styles.TodoList}>
+      <h2>List of Todos</h2>
       {allTheTodos}
     </div>
   );

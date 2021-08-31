@@ -6,6 +6,7 @@
   
   color: hsla(90, 85%, 80%, 0.9);
   font-size: 1.75vw;
+  text-align: left;
 }
 
 .Todo span {
