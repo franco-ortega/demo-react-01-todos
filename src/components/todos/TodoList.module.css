@@ -1,5 +1,6 @@
 .TodoList {
-  background: hsla(175, 50%, 50%, 0.9);
+  /* background: hsla(175, 50%, 50%, 0.9); */
+  /* height: 100%; */
   width: 30vw;
   display: flex;
   flex-direction: column;
