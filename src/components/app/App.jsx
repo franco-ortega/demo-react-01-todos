@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AddTodo from '../todos/AddTodo';
+import TodoList from '../todos/TodoList';
 import styles from './App.module.css';
 
 class App extends Component {
@@ -32,8 +33,9 @@ class App extends Component {
           <AddTodo
             onTodoSubmit={this.onTodoSubmit}
             onTodoChange={this.onTodoChange}
-            // todos={this.state.todos}
-            // todo={this.state.todo}
+          />
+          <TodoList
+            todos={this.state.todos}
           />
           <div>Todo List</div>
         </div>

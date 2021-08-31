@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import styles from './Todo.module.css';
 
 const Todo = ({ todo }) => {
-  render(
+  return (
     <div className={styles.Todo}>
-    <input type="checkbox" />
-    <span>{todo}</span>
+      <input type="checkbox" />
+      <span>{todo}</span>
     </div>
   );
 };
