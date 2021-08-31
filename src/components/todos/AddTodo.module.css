@@ -4,6 +4,7 @@
   background: hsla(75, 80%, 50%, 0.75);
   width: 30vw;
   padding: 1vw;
+  font-size: 2vw;
   text-align: center;
 }
 
@@ -16,7 +17,7 @@
 }
 
 .AddTodo input {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .AddTodo button {

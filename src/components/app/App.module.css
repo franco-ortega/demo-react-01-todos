@@ -14,9 +14,11 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 2vw;
+  font-size: 3vw;
 }
 
-.App div {
+.App > div {
   display: flex;
-  /* flex-direction: row; */
+  align-items: flex-start;
+  gap: 2vw;
 }
