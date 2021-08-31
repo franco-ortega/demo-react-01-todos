@@ -2,25 +2,25 @@
   border:  medium solid blue;
   border-radius: 2vw;
   background: hsla(75, 80%, 50%, 0.75);
-  width: 30vw;
+  width: max(30vw, 15rem);
   padding: 1vw;
-  font-size: 2vw;
+  font-size: max(2vw, 1rem);
   text-align: center;
 }
 
 .AddTodo form {
-  margin: 1vw;
+  margin: max(1vw, 2vw);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1vw;
+  gap: max(1vw, 2vw);
 }
 
 .AddTodo input {
-  font-size: 1.5vw;
+  font-size: var(--subheader-font-size);
 }
 
 .AddTodo button {
   border-radius: 5vw;
-  padding: 0.5vw 1vw;
+  padding: max(0.5vw, 0.25rem) max(1vw, 0.75rem);
 }
