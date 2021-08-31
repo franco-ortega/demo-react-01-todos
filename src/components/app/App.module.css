@@ -19,6 +19,14 @@ body {
 
 .App > div {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   gap: 2vw;
+}
+
+@media screen and (min-width: 500px) {
+  .App > div {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2vw;
+  }  
 }

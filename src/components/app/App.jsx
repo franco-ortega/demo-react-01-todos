@@ -26,6 +26,10 @@ class App extends Component {
     });
   };
 
+  onDeleteAllTodosClick = () => {
+    this.setState({ todos: []});
+  };
+
   render() {
     console.log(this.state.todo);
     console.log(this.state.todos);
@@ -40,6 +44,7 @@ class App extends Component {
           />
           <TodoList
             todos={this.state.todos}
+            onDeleteAllTodosClick={this.onDeleteAllTodosClick}
           />
         </div>
       </main>
