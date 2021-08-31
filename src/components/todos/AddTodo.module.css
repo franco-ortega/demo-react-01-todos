@@ -1,0 +1,10 @@
+.AddTodo {
+  border:  thin solid blue;
+  width: 30vw;
+}
+
+.AddTodo form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
