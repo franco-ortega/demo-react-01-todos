@@ -2,9 +2,8 @@
   border:  medium solid blue;
   border-radius: 2vw;
   background: hsla(75, 80%, 50%, 0.75);
-  width: max(30vw, 15rem);
+  width: clamp(15rem, 35vw, 20rem);
   padding: 1vw;
-  font-size: max(2vw, 1rem);
   text-align: center;
 }
 
@@ -17,10 +16,11 @@
 }
 
 .AddTodo input {
-  font-size: var(--subheader-font-size);
+  font-size: max(1.5vw, 1rem);
 }
 
 .AddTodo button {
   border-radius: 5vw;
   padding: max(0.5vw, 0.25rem) max(1vw, 0.75rem);
+  font-size: 1rem;
 }
