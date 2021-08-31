@@ -1,10 +1,25 @@
 .AddTodo {
-  border:  thin solid blue;
+  border:  medium solid blue;
+  border-radius: 5vw;
+  background: hsla(75, 80%, 50%, 0.75);
   width: 30vw;
+  padding: 1vw;
+  text-align: center;
 }
 
 .AddTodo form {
+  margin: 1vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1vw;
+}
+
+.AddTodo input {
+  font-size: 2vw;
+}
+
+.AddTodo button {
+  border-radius: 5vw;
+  padding: 0.5vw 1vw;
 }
