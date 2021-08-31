@@ -1,2 +1,2 @@
 # demo-react-01-todos
-Todo List demo
+Todo List demo built with React.
