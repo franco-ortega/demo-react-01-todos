@@ -9,7 +9,9 @@ class AddTodo extends Component {
         <h2>Add a Todo</h2>
         <form onSubmit={this.props.onTodoSubmit}>
           <label>
-            <input placeholder="enter todo"
+            <input
+              placeholder="enter todo"
+              value={this.props.todo}
               onChange={this.props.onTodoChange}
             />
           </label>
@@ -23,7 +25,7 @@ class AddTodo extends Component {
 AddTodo.propTypes = {
   onTodoSubmit: PropTypes.func.isRequired,
   onTodoChange: PropTypes.func.isRequired,
-  // todos: PropTypes.array.isRequired
+  todo: PropTypes.string.isRequired
 };
 
 export default AddTodo;

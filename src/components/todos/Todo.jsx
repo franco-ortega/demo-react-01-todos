@@ -12,7 +12,7 @@ const Todo = ({ todo }) => {
 };
 
 Todo.propTypes = {
-  todo: PropTypes.string.string
+  todo: PropTypes.string.isRequired
 };
 
 export default Todo;
