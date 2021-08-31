@@ -5,7 +5,7 @@ import styles from './TodoList.module.css';
 
 const TodoList = ({ todos }) => {
   const allTheTodos = todos.map((todo, i) => (
-    <Todo key={i} todo={todo} />
+    <Todo key={i} todo={todo} id={i} />
   ));
 
   return (
