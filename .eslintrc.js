@@ -24,9 +24,42 @@ module.exports = {
     "react"
   ],
   "rules": {
-    "no-console": "warn",
     "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "space-in-parens": ["error"],
+    "space-infix-ops": "error",
+    "object-curly-spacing": ["error", "always"],
+    "comma-spacing": "error",
+    "space-before-function-paren": ["error", "never"],
+    "eol-last": ["error", "always"],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true,
+        "overrides": {
+        "do": {
+          "after": false
+        },
+        "for": {
+          "after": false
+        },
+        "if": {
+          "after": false
+        },
+        "switch": {
+          "after": false
+        },
+        "while": {
+          "after": false
+        },
+        "catch": {
+          "after": false
+        }
+        }
+      }
+    ]
   }
 }
