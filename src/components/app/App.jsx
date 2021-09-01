@@ -47,7 +47,7 @@ class App extends Component {
   };
 
   render() {
-    return( 
+    return(  
       <main className={styles.App}>
         <h1>Todos App</h1>
         <div>
