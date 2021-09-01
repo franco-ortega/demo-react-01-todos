@@ -1,0 +1,21 @@
+.TodoList {
+  background: hsla(175, 50%, 50%, 0.9);
+  border: medium solid hsla(10, 80%, 5%, 0.75);
+  border-radius: clamp(2rem, 3vw, 10rem);
+  height: clamp(30rem, 79vh, 35rem);
+  width: clamp(15rem, 90vw, 35rem);
+  padding: 1vw;
+  text-align: center;
+  overflow: auto;
+}
+
+.TodoList li {
+  padding: 0.5rem;
+}
+
+.TodoList button {
+  border-radius: 5vw;
+  margin: 0.75rem;
+  padding: max(0.5vw, 0.25rem) max(1vw, 0.75rem);
+  font-size: 1rem;
+}

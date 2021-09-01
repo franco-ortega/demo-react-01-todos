@@ -1,0 +1,27 @@
+.Todo {
+  background: hsla(125, 40%, 30%, 0.5);
+  border: thin solid black;
+  border-radius: clamp(2rem, 3vw, 10rem);
+  padding: max(0.5vw, 0.25rem) max(1vw, 0.5rem);
+  
+  color: hsla(90, 85%, 80%, 0.9);
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.Todo label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Todo span {
+  margin-left: max(0.5vw, 0.5rem);
+  overflow: auto;
+}
+
+.Todo input:checked + span {
+  text-decoration: line-through;
+  opacity: 50%;
+  color: lightgray;
+}
