@@ -8,17 +8,13 @@
     "eslint:recommended",
     "plugin:react/recommended"
   ],
-  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 12,
     "sourceType": "module",
-    "requireConfigFile": false,
-    "babelOptions": {
-      "presets": ["@babel/preset-react"]
-   }
+    "requireConfigFile": false
   },
   "plugins": [
     "react"
