@@ -1,6 +1,6 @@
 .AddTodo {
   border:  medium solid blue;
-  border-radius: 2vw;
+  border-radius: clamp(2rem, 3vw, 10rem);
   background: hsla(75, 80%, 50%, 0.75);
   width: clamp(15rem, 35vw, 20rem);
   padding: 1vw;
@@ -8,15 +8,16 @@
 }
 
 .AddTodo form {
-  margin: max(1vw, 2vw);
+  margin: 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: max(1vw, 2vw);
+  gap: 2vw;
 }
 
 .AddTodo input {
-  font-size: max(1.5vw, 1rem);
+  padding: 0 max(5px, 0.5vw);
+  font-size: max(1.5vw, 1.2rem);
 }
 
 .AddTodo button {
