@@ -5,9 +5,10 @@
   height: 70vh;
   width: clamp(15rem, 90vw, 35rem);
   padding: 1vw;
-  text-align: center;
+  /* text-align: center; */
 
   display: grid;
+  grid-template-rows: 1fr 5fr;
 }
 
 .TodoList ul {
@@ -28,7 +29,7 @@
 
 @media screen and (max-width: 400px) and (max-height: 700px) {
   .TodoList {
-    height: 65vh;
+    height: 60vh;
   }
 }
 
