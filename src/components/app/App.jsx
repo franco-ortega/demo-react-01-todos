@@ -10,24 +10,41 @@ class App extends Component {
     todos: []
   };
 
+  todosKey = 'TODOS';
+
+  setLocalStorage = (key, value) => {
+    localStorage.setItem(key, JSON.stringify(value));
+  };
+
+  getLocalStorage = (key) => {
+    return JSON.parse(localStorage.getItem(key));
+  };
+
+
+  componentDidMount = () => {
+    const localTodos = this.getLocalStorage(this.todosKey);
+    if(localTodos) this.setState({ todos: localTodos });
+  };
+
   onTodoChange = ({ target }) => {
     this.setState({
       todo: target.value
     });
   };
 
-  onTodoSubmit = (e) => {
+  onTodoSubmit = async(e) => {
     e.preventDefault();
-    this.setState(prevState => ({
-      todos: [...prevState.todos, prevState.todo]
-    }));
-    this.setState({
+    await this.setState({
+      todos: [...this.state.todos, this.state.todo],
       todo: ''
     });
+
+    this.setLocalStorage(this.todosKey, this.state.todos);
   };
 
   onDeleteAllTodosClick = () => {
     this.setState({ todos: []});
+    this.setLocalStorage('TODOS', []);
   };
 
   render() {
