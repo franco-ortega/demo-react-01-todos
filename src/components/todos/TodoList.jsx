@@ -12,8 +12,10 @@ const TodoList = ({ todos, onDeleteAllTodosClick }) => {
 
   return (
     <div className={styles.TodoList}>
-      <h2>List of Todos</h2>
-      {todos.length >= 1 && <button onClick={onDeleteAllTodosClick}>Delete All Todos</button>}
+      <header>
+        <h2>List of Todos</h2>
+        {todos.length >= 1 && <button onClick={onDeleteAllTodosClick}>Delete All Todos</button>}
+      </header>
       <ul>
         {allTheTodos}
       </ul>
