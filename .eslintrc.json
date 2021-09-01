@@ -1,4 +1,4 @@
-module.exports = {
+{
   "env": {
     "browser": true,
     "es2021": true,
@@ -60,6 +60,15 @@ module.exports = {
         }
         }
       }
-    ]
+    ],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "array-bracket-spacing": "error",
+    "prefer-const": "error",
+    "no-var": "error",
+    "rest-spread-spacing": "error",
+    "prefer-arrow-callback": "error",
+    "object-shorthand": ["error", "always"],
+    "max-len": "error",
+    "jsx-quotes": "error"
   }
 }
