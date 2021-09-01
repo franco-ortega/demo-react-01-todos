@@ -4,13 +4,12 @@ import TodoList from '../todos/TodoList';
 import styles from './App.module.css';
 
 class App extends Component {
-  // Todo is entered -> gets added to state (array)
   state = {
     todo: '',
     todos: []
   };
 
-  todosKey = 'TODOS';
+  todosKey = 'TODOS'; 
 
   setLocalStorage = (key, value) => {
     localStorage.setItem(key, JSON.stringify(value));
