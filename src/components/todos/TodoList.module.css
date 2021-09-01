@@ -6,11 +6,12 @@
   width: clamp(15rem, 90vw, 35rem);
   padding: 1vw;
   text-align: center;
+
+  display: grid;
 }
 
 .TodoList ul {
   list-style: none;
-  height: 82%;
   overflow: auto;
 }
 
@@ -29,28 +30,16 @@
   .TodoList {
     height: 65vh;
   }
-
-  .TodoList ul {
-    height: 80%;
-  } 
 }
 
 @media screen and (min-width: 500px) {
   .TodoList {
     height: 65vh;
   }
-
-  .TodoList ul {
-    height: 80%;
-  }
 }
 
 @media screen and (min-width: 900px) {
   .TodoList {
     height: 75vh;
-  }
-
-  .TodoList ul {
-    height: 77%;
   }
 }
