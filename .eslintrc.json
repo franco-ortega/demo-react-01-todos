@@ -13,13 +13,13 @@
       "jsx": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
+    "requireConfigFile": false
   },
   "plugins": [
     "react"
   ],
   "parser": "@babel/eslint-parser",
-  "requireConfigFile": false,
   "rules": {
     "linebreak-style": [
       "error",
