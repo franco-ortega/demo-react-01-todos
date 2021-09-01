@@ -42,12 +42,12 @@ class App extends Component {
   };
 
   onDeleteAllTodosClick = () => {
-    this.setState({ todos: []});
+    this.setState({ todos: [] });
     this.setLocalStorage('TODOS', []);
   };
 
   render() {
-    return(
+    return( 
       <main className={styles.App}>
         <h1>Todos App</h1>
         <div>

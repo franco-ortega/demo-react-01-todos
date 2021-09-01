@@ -14,7 +14,9 @@ const TodoList = ({ todos, onDeleteAllTodosClick }) => {
     <div className={styles.TodoList}>
       <header>
         <h2>List of Todos</h2>
-        {todos.length >= 1 && <button onClick={onDeleteAllTodosClick}>Delete All Todos</button>}
+        {todos.length >= 1
+        &&
+        <button onClick={onDeleteAllTodosClick}>Delete All Todos</button>}
       </header>
       <ul>
         {allTheTodos}
