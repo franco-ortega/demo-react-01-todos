@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 class AddTodo extends Component {
   render() {
-    return(
+    return( 
       <section className={styles.AddTodo}>
         <h2>Add a Todo</h2>
         <form onSubmit={this.props.onTodoSubmit}>
