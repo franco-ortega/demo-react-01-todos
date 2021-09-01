@@ -48,7 +48,7 @@ class App extends Component {
   render() {
     return(
       <main className={styles.App}>
-        <h1>T o d o s App</h1>
+        <h1>Todos App</h1>
         <div>
           <AddTodo
             onTodoSubmit={this.onTodoSubmit}
