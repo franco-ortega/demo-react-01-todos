@@ -1,4 +1,4 @@
-{
+module.exports = {
   "env": {
     "browser": true,
     "es2021": true,
@@ -8,13 +8,13 @@
     "eslint:recommended",
     "plugin:react/recommended"
   ],
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 12,
     "sourceType": "module",
-    "requireConfigFile": false,
     "babelOptions": {
       "presets": ["@babel/preset-react"]
    }
@@ -22,21 +22,10 @@
   "plugins": [
     "react"
   ],
-  "parser": "@babel/eslint-parser",
   "rules": {
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
     "no-console": "warn",
-        "indent": [
-          "error",
-          2,
-          {
-            "SwitchCase": 1
-          }
-        ],
-        "quotes": ["error", "single"],
-        "semi": ["error", "always"]
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
   }
 }
