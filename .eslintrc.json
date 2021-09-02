@@ -65,6 +65,7 @@
     "prefer-arrow-callback": "error",
     "object-shorthand": ["error", "always"],
     "max-len": "error",
-    "jsx-quotes": "error"
+    "jsx-quotes": "error",
+    "react/prefer-es6-class": "error"
   }
 }
