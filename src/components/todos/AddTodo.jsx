@@ -1,26 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './AddTodo.module.css';
 import PropTypes from 'prop-types';
 
-class AddTodo extends Component {
-  render() {
-    return (
-      <section className={styles.AddTodo}>
-        <h2>Add a Todo</h2>
-        <form onSubmit={this.props.onTodoSubmit}>
-          <label>
-            <input
-              placeholder="enter todo"
-              value={this.props.todo}
-              onChange={this.props.onTodoChange}
-            />
-          </label>
-          <button>Submit Todo</button>
-        </form>
-      </section>
-    );
-  }
-}
+const AddTodo = ({ onTodoSubmit, onTodoChange, todo }) => {
+  return (
+    <section className={styles.AddTodo}>
+      <h2>Add a Todo</h2>
+      <form onSubmit={onTodoSubmit}>
+        <label>
+          <input
+            placeholder="enter todo"
+            value={todo}
+            onChange={onTodoChange}
+          />
+        </label>
+        <button>Submit Todo</button>
+      </form>
+    </section>
+  );
+};
 
 AddTodo.propTypes = {
   onTodoSubmit: PropTypes.func.isRequired,
