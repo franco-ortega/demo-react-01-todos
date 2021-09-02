@@ -41,7 +41,8 @@ class App extends Component {
   // when form is submitted, todo is added to the list of todos
   // todo (along with value of input) is reset to empty
   // places updated todo list in local storage
-  // async await allows setState to finish updating before todos are placed in local storage
+  // async await allows setState to finish before todos are put...
+  // ...in local storage
   onTodoSubmit = async(e) => {
     e.preventDefault();
     await this.setState({
